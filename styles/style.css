@@ -1,22 +1,92 @@
-
-*{
-    box-sizing: border-box; 
+/* declare variable always inside the root element*/
+:root {
+  --primary: red;
+  --spacing: 4rem;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-h2{
-    color: red;
+* {
+  box-sizing: border-box;
 }
 
-h2{
-    color: green;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  height: 100vh;
+}
+h1 {
+  font-size: 5vw;
+  line-height: 1.4em;
+  margin-bottom: 2rem; /* twice the size of my root size element, which is 16 pixel*/
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin-bottom: var(spacing);
+}
+
+p {
+  line-height: 1.4em; /* 0.4 bigger than 100% which is 16px*/
+  margin-bottom: 1em;
+}
+
+/* grab id, but id's should not be used to style*/
+#about {
+}
+/* grab class*/
+.button {
+  color: var(--primary);
+  font-weight: bold;
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.button:hover {
+  /* changes the state of the button to hover (there is also state active/visited)*/
+  color: white;
+  background-color: var(--primary);
+}
+
+.about {
+  background-color: var(--primary);
+  color: white;
+  padding: var(spacing);
+}
+
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800) {
+  /* only affects screens bigger than 800px*/
+  .about-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+  }
+  .about-text {
+    margin-left: var(--spacing);
+  }
+}
+.about-img {
+  display: block;
+  width: 100%; /* responsive - adapts to screen*/
+  max-width: 350px;
+  margin: 0 auto var(--spacing;);
+}
+
+.social-link {
+    copy from slides
+}
+
+.twitter {
+    background-image: url(../images/  link  da imagem);
 }
