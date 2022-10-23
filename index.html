@@ -6,11 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joana Portfolio</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+    </style>
+    <link rel="icon" href=".images/favicon.ico" />
+    <script src="myScript.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Hello! My name is <span>Joana</span>. I'm a Web Developer</h1>
-      <a class="button" href="#about">Find out more</a>
+    <header class="header">
+      <div class="header-nav">
+        <nav>
+          <ul class="header-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <button class="button button-secondary" id="changebutton">Change Theme</button>
+      </div>
+      <div class="header-content">
+        <h1 class="header-title">Hello! My name is <span>Joana</span>. I'm a Web Developer</h1>
+        <a class="button" href="#about">Find out more</a>
+      </div>
     </header>
     <main>
       <section class="about" id="about">
@@ -57,18 +73,15 @@
           >
           <!-- <img src="./images/project1.webp" alt="project" width="600" />-->
         </article>
-        <!--<article>
-         <h3>Project Title</h3>
+        <article>
+         <h3>Typing Game</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            maiores nihil soluta ad at laborum error, quas quaerat quis!
-            Perferendis facilis pariatur libero quas neque magnam quisquam optio
-            quasi itaque
+            Here you can find a fun typing game where you can challenge yourself and check at what pace you write. 
           </p>
-          <a href="">Source Code</a>
-          <a href="">View Project</a>
-          <img src="./images/project1.webp" alt="project" width="600" />
-        </article>-->
+          <a href="https://github.com/JonsRa/typing-game">Source Code</a>
+        <!--  <a href="">View Project</a>
+          <img src="./images/project1.webp" alt="project" width="600" />-->
+        </article>
       </section>
       <section class="contact">
         <h2>Contact</h2>
